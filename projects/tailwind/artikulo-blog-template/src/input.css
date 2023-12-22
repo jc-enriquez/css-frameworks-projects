@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@700;900&display=swap");
 
 *:focus {
   box-shadow: 0 0 0 0.2rem #c4b5fd;
