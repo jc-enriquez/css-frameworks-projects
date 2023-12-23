@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,53 +13,100 @@
   <body class="font-poppins">
     <header>
       <div class="mx-auto max-w-3xl px-4 py-8">
-        <nav class="flex items-center justify-between">
-          <ul class="flex list-none gap-4">
-            <li>
-              <a
-                href="index.html"
-                class="font-medium text-violet-700 transition hover:text-violet-700"
-                >Home</a
+        <div class="navbar bg-base-100 justify-between">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="font-medium transition hover:text-violet-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="font-medium transition hover:text-violet-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <a
-            href="index.html"
-            class="block font-raleway text-4xl font-black transition"
-            >Artikulo</a
-          >
-          <ul class="flex list-none gap-4">
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Archive</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a>Pages</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a
+              href="index.html"
+              class="block font-raleway text-4xl font-black transition"
+              >Artikulo</a
+            >
+          </div>
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <details>
+                  <summary
+                    class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >
+                    Pages
+                  </summary>
+                  <ul class="p-2">
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 2</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -127,8 +174,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Bushwick migas disrupt hoodie, single-origin coffee echo park
-                portland subway
+                Embracing Stillness: A Guide to Mindful Living
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -139,9 +185,9 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Truffaut praxis pop-up, actually shabby chic polaroid tilde jawn
-                gochujang yes plz tonx. Master cleanse retro bicycle rights
-                normcore.
+                Explore the transformative power of stillness and mindfulness in
+                daily life. Discover practical tips, personal stories, and
+                expert advice to cultivate a more serene and balanced existence.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <div class="flex items-center gap-4">
@@ -174,8 +220,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Intelligentsia kombucha Brooklyn poutine salvia. Ugh everyday
-                carry hammock next level squid
+                Uncharted Journeys: Navigating Life's Twists with Resilience
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -186,9 +231,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Slow-carb microdosing gorpcore, letterpress polaroid hell of
-                vegan raclette woke viral snackwave dreamcatcher hoodie
-                helvetica.
+                Embark on a journey of resilience as we navigate through life's
+                unpredictable twists. Join us for inspiring narratives,
+                resilience-building strategies, and interviews with individuals
+                who've triumphed over adversity.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -222,7 +268,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Gorpcore tumblr solarpunk, you probably haven't heard of them
+                Beyond the Horizon: Exploring the Depths of Self-Discovery
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -233,8 +279,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Poutine beard vibecession, tbh williamsburg unicorn green juice.
-                Irony next level fixie, bodega boys cornhole tacos tumeric.
+                Delve into the realms of self-discovery with thought-provoking
+                articles, introspective exercises, and personal stories. Uncover
+                hidden facets of yourself and embrace the journey of
+                self-awareness.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -265,8 +313,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Adaptogen small batch twee, pitchfork biodiesel keytar blue
-                bottle
+                Simplicity Refined: A Minimalist Lifestyle Guide
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -274,8 +321,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Selvage ugh tumblr fanny pack authentic fixie freegan vinyl
-                church-key direct trade intelligentsia copper mug cliche.
+                Simplify your life and find joy in minimalism. This blog is your
+                go-to resource for minimalist living, practical decluttering
+                tips, and stories of those who've embraced a simpler, more
+                intentional lifestyle.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -306,7 +355,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Heirloom ennui health goth yuccie chillwave bushwick
+                Cultivating Creativity: Nurturing Your Artistic Spirit
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -317,8 +366,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Poutine cred 90's selfies, heirloom next level plaid kombucha
-                pitchfork paleo before they sold out celiac waistcoat banjo.
+                Ignite your creativity with a blend of artistic inspiration,
+                creative exercises, and features on talented individuals in the
+                creative community. Unleash your artistic spirit and cultivate a
+                more imaginative life.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -349,8 +400,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Air plant kogi pitchfork activated charcoal hashtag same blog af
-                pop-up
+                Nourish to Flourish: A Holistic Wellness Journey
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -358,8 +408,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Poutine blog skateboard taiyaki squid next level. Meggings lyft
-                four loko chartreuse. Helvetica cronut squid.
+                Dive into the world of holistic wellness with nourishing
+                recipes, wellness practices, and expert insights. Discover how
+                nourishing your body, mind, and soul can lead to a flourishing
+                and balanced life.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -390,8 +442,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Meh copper mug locavore polaroid. Blue bottle iceland yuccie
-                heirloom
+                Tech Savvy Living: A Modern Guide to Digital Wellness
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -402,8 +453,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Craft beer authentic woke portland green juice mumblecore,
-                mlkshk semiotics bespoke 90's actually affogato.
+                Strike a balance in the digital age with practical tips on
+                digital wellness, tech-related insights, and mindful tech
+                practices. Navigate the digital landscape while preserving your
+                well-being.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img
@@ -434,8 +487,7 @@
             />
             <div class="pb-10 pt-6">
               <a href="#" class="mb-4 block text-xl font-semibold">
-                Neutra seitan skateboard, sartorial pug pickled af mlkshk
-                dreamcatcher
+                Green Living Chronicles: Sustainable Lifestyle Tips
               </a>
               <div class="mb-6 flex gap-4 text-xs">
                 <span class="block rounded-full bg-slate-200 px-3 py-1.5"
@@ -443,8 +495,10 @@
                 >
               </div>
               <p class="mb-8 text-gray-600">
-                Fashion axe fingerstache lomo microdosing pug normcore put a
-                bird on it man bun mlkshk selvage try-hard tacos.
+                Join the eco-friendly movement with sustainable living tips,
+                green lifestyle hacks, and stories of individuals making a
+                positive impact on the planet. Embrace a lifestyle that
+                harmonizes with Mother Earth.
               </p>
               <div class="flex items-center gap-4 text-xs text-gray-600">
                 <img

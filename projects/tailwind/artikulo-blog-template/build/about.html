@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,53 +13,100 @@
   <body class="font-poppins">
     <header>
       <div class="mx-auto max-w-3xl px-4 py-8">
-        <nav class="flex items-center justify-between">
-          <ul class="flex list-none gap-4">
-            <li>
-              <a
-                href="index.html"
-                class="font-medium transition hover:text-violet-700"
-                >Home</a
+        <div class="navbar bg-base-100 justify-between">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="font-medium text-violet-700 transition hover:text-violet-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="font-medium transition hover:text-violet-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <a
-            href="index.html"
-            class="block font-raleway text-4xl font-black transition"
-            >Artikulo</a
-          >
-          <ul class="flex list-none gap-4">
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Archive</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a>Pages</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a
+              href="index.html"
+              class="block font-raleway text-4xl font-black transition"
+              >Artikulo</a
+            >
+          </div>
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <details>
+                  <summary
+                    class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >
+                    Pages
+                  </summary>
+                  <ul class="p-2">
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 2</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -106,22 +153,19 @@
               Our Story
             </h2>
             <p class="mb-2 text-gray-600 md:mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-              porro laboriosam quasi in dignissimos sed placeat odio, rem cumque
-              veritatis, voluptates reiciendis libero accusamus deleniti! Ea
-              temporibus magnam ipsam tempore nulla nihil earum nemo, facere,
-              voluptate vel ad eaque ullam.
+              Welcome to Artikulo, where the journey to mindful living unfolds
+              in every word, image, and shared experience. We are more than a
+              blog; we are a community of seekers, dreamers, and believers in
+              the art of intentional living.
             </p>
 
             <p class="mb-8 text-gray-600 md:mb-16">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-              aliquam! Nemo delectus voluptatum, ipsum ab dolor error odio
-              veniam quos quae excepturi veritatis, quasi cumque dolore
-              temporibus rem maxime harum quo! Veritatis doloribus, earum
-              aliquam obcaecati impedit maxime suscipit temporibus incidunt
-              commodi culpa praesentium assumenda molestias error sequi itaque
-              consectetur! Repellendus exercitationem ratione maiores debitis
-              nam suscipit? Molestias, nobis cum!
+              At the helm of Artikulo is Alex, a passionate curator driven by
+              the belief that everyone deserves a space to grow, learn, and find
+              inspiration in their everyday lives. With a background in
+              storytelling and a heart brimming with enthusiasm, Alex envisioned
+              this digital haven as a place where the pursuit of balance and
+              mindfulness meets the beauty of shared stories.
             </p>
 
             <div class="mb-6 flex flex-wrap gap-8 md:mb-12">

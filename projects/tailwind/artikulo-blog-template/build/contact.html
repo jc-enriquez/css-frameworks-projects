@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,53 +13,100 @@
   <body class="font-poppins">
     <header>
       <div class="mx-auto max-w-3xl px-4 py-8">
-        <nav class="flex items-center justify-between">
-          <ul class="flex list-none gap-4">
-            <li>
-              <a
-                href="index.html"
-                class="font-medium transition hover:text-violet-700"
-                >Home</a
+        <div class="navbar bg-base-100 justify-between">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="font-medium transition hover:text-violet-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="font-medium text-violet-700 transition hover:text-violet-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <a
-            href="index.html"
-            class="block font-raleway text-4xl font-bold transition hover:text-violet-700"
-            >Artikulo</a
-          >
-          <ul class="flex list-none gap-4">
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Archive</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-medium transition hover:text-violet-700"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a>Pages</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a
+              href="index.html"
+              class="block font-raleway text-4xl font-black transition"
+              >Artikulo</a
+            >
+          </div>
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal hidden gap-4 px-1 sm:flex">
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <details>
+                  <summary
+                    class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                  >
+                    Pages
+                  </summary>
+                  <ul class="p-2">
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:bg-violet-700 hover:text-slate-100 active:bg-violet-700"
+                        >Submenu 2</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -175,9 +222,119 @@
         <!-- /Grid Container - Four Cols -->
 
         <section class="mx-auto max-w-7xl px-2 py-16">
-          <h2 class="mb-4 font-raleway text-3xl font-bold">
+          <h2 class="mb-8 font-raleway text-3xl font-bold md:mb-16">
             Frequently Asked Questions
           </h2>
+
+          <div class="flex flex-col gap-8">
+            <div class="collapse-plus collapse bg-violet-50">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div
+                class="collapse-title flex items-center gap-4 text-xl font-semibold"
+              >
+                <ion-icon
+                  name="help-outline"
+                  class="rounded-full bg-violet-700 p-2 text-slate-100"
+                ></ion-icon>
+                <span class="block">What is Artikulo about?</span>
+              </div>
+              <div class="collapse-content">
+                <p class="ml-0 text-sm text-gray-600 md:ml-14">
+                  Artikulo is a lifestyle blog dedicated to exploring mindful
+                  living, self-care, and personal development. We share
+                  practical tips, inspirational stories, and expert advice to
+                  help you live a balanced and fulfilling life.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse-plus collapse bg-violet-50">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div
+                class="collapse-title flex items-center gap-4 text-xl font-semibold"
+              >
+                <ion-icon
+                  name="pencil-outline"
+                  class="rounded-full bg-violet-700 p-2 text-slate-100"
+                ></ion-icon>
+                <span class="block">How often do you post new content?</span>
+              </div>
+              <div class="collapse-content">
+                <p class="ml-0 text-sm text-gray-600 md:ml-14">
+                  We publish new content every Tuesday and Thursday. This
+                  includes articles, interviews, and occasional bonus content to
+                  keep you inspired throughout the week.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse-plus collapse bg-violet-50">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div
+                class="collapse-title flex items-center gap-4 text-xl font-semibold"
+              >
+                <ion-icon
+                  name="mail-unread-outline"
+                  class="rounded-full bg-violet-700 p-2 text-slate-100"
+                ></ion-icon>
+                <span class="block"
+                  >Can I submit a guest post or contribute to Artikulo?</span
+                >
+              </div>
+              <div class="collapse-content">
+                <p class="ml-0 text-sm text-gray-600 md:ml-14">
+                  Currently, we are not accepting guest contributions. However,
+                  we appreciate your interest and may open up to submissions in
+                  the future. Stay tuned for updates!
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse-plus collapse bg-violet-50">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div
+                class="collapse-title flex items-center gap-4 text-xl font-semibold"
+              >
+                <ion-icon
+                  name="hand-right-outline"
+                  class="rounded-full bg-violet-700 p-2 text-slate-100"
+                ></ion-icon>
+                <span class="block">Is there a way to support Artikulo?</span>
+              </div>
+              <div class="collapse-content">
+                <p class="ml-0 text-sm text-gray-600 md:ml-14">
+                  Absolutely! You can support us by subscribing to our
+                  newsletter, engaging with our content, and sharing your
+                  favorite articles on social media. Your support means the
+                  world to us and helps us continue creating valuable content
+                  for you.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse-plus collapse bg-violet-50">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div
+                class="collapse-title flex items-center gap-4 text-xl font-semibold"
+              >
+                <ion-icon
+                  name="share-social-outline"
+                  class="rounded-full bg-violet-700 p-2 text-slate-100"
+                ></ion-icon>
+                <span class="block"
+                  >Can I share your content on my website or social media?</span
+                >
+              </div>
+              <div class="collapse-content">
+                <p class="ml-0 text-sm text-gray-600 md:ml-14">
+                  Absolutely! We encourage sharing. Feel free to share our
+                  content on your website or social media platforms, and please
+                  remember to credit Artikulo with a link back to the original
+                  post.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Grid Container - Two Cols -->
