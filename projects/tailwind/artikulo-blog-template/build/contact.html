@@ -13,7 +13,7 @@
   <body class="font-poppins">
     <header>
       <div class="mx-auto max-w-3xl px-4 py-8">
-        <div class="navbar bg-base-100 justify-between">
+        <div class="navbar justify-between bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
@@ -34,7 +34,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
               >
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -111,17 +111,17 @@
     </header>
 
     <main>
-      <div class="mx-auto max-w-7xl px-4 py-16">
-        <header class="text-center">
-          <h1
-            class="mb-6 font-raleway text-3xl font-bold sm:text-4xl md:text-5xl"
-          >
-            Have a <span class="text-violet-700">talk</span> with us!
-          </h1>
-          <p class="text-gray-600">Let us know how can we help</p>
-        </header>
-        <!-- Grid Container - Four Cols -->
-        <section class="grid gap-4 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <header class="mx-auto max-w-7xl p-4 text-center sm:py-8">
+        <h1
+          class="mb-3 font-raleway text-3xl font-bold sm:mb-6 sm:text-4xl md:text-5xl"
+        >
+          Have a <span class="text-violet-700">talk</span> with us!
+        </h1>
+        <p class="text-gray-600">Let us know how can we help</p>
+      </header>
+
+      <section class="mx-auto max-w-7xl px-4 py-8 sm:py-16">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <div class="rounded-lg border border-solid border-gray-200 p-4">
             <div class="flex flex-col justify-between gap-14">
               <div class="self-start rounded-full bg-violet-50 px-4 py-2">
@@ -218,199 +218,199 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- /Grid Container - Four Cols -->
+        </div>
+      </section>
 
-        <section class="mx-auto max-w-7xl px-2 py-16">
-          <h2 class="mb-8 font-raleway text-3xl font-bold md:mb-16">
-            Frequently Asked Questions
-          </h2>
+      <section class="mx-auto max-w-7xl px-4 py-8 sm:py-16">
+        <h2
+          class="mb-8 font-raleway text-2xl font-bold sm:text-3xl md:mb-16 md:text-4xl"
+        >
+          Frequently Asked Questions
+        </h2>
 
-          <div class="flex flex-col gap-8">
-            <div class="collapse-plus collapse bg-violet-50">
-              <input type="radio" name="my-accordion-3" checked="checked" />
-              <div
-                class="collapse-title flex items-center gap-4 text-xl font-semibold"
-              >
-                <ion-icon
-                  name="help-outline"
-                  class="rounded-full bg-violet-700 p-2 text-slate-100"
-                ></ion-icon>
-                <span class="block">What is Artikulo about?</span>
-              </div>
-              <div class="collapse-content">
-                <p class="ml-0 text-sm text-gray-600 md:ml-14">
-                  Artikulo is a lifestyle blog dedicated to exploring mindful
-                  living, self-care, and personal development. We share
-                  practical tips, inspirational stories, and expert advice to
-                  help you live a balanced and fulfilling life.
-                </p>
-              </div>
+        <div class="flex flex-col gap-8">
+          <div class="collapse collapse-plus bg-violet-50">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="text-md collapse-title flex items-center gap-4 font-semibold sm:gap-6 sm:text-lg md:text-xl"
+            >
+              <ion-icon
+                name="help-outline"
+                class="shrink-0 rounded-full bg-violet-700 p-2 text-slate-100"
+              ></ion-icon>
+              <span class="block">What is Artikulo about?</span>
             </div>
-
-            <div class="collapse-plus collapse bg-violet-50">
-              <input type="radio" name="my-accordion-3" checked="checked" />
-              <div
-                class="collapse-title flex items-center gap-4 text-xl font-semibold"
-              >
-                <ion-icon
-                  name="pencil-outline"
-                  class="rounded-full bg-violet-700 p-2 text-slate-100"
-                ></ion-icon>
-                <span class="block">How often do you post new content?</span>
-              </div>
-              <div class="collapse-content">
-                <p class="ml-0 text-sm text-gray-600 md:ml-14">
-                  We publish new content every Tuesday and Thursday. This
-                  includes articles, interviews, and occasional bonus content to
-                  keep you inspired throughout the week.
-                </p>
-              </div>
-            </div>
-
-            <div class="collapse-plus collapse bg-violet-50">
-              <input type="radio" name="my-accordion-3" checked="checked" />
-              <div
-                class="collapse-title flex items-center gap-4 text-xl font-semibold"
-              >
-                <ion-icon
-                  name="mail-unread-outline"
-                  class="rounded-full bg-violet-700 p-2 text-slate-100"
-                ></ion-icon>
-                <span class="block"
-                  >Can I submit a guest post or contribute to Artikulo?</span
-                >
-              </div>
-              <div class="collapse-content">
-                <p class="ml-0 text-sm text-gray-600 md:ml-14">
-                  Currently, we are not accepting guest contributions. However,
-                  we appreciate your interest and may open up to submissions in
-                  the future. Stay tuned for updates!
-                </p>
-              </div>
-            </div>
-
-            <div class="collapse-plus collapse bg-violet-50">
-              <input type="radio" name="my-accordion-3" checked="checked" />
-              <div
-                class="collapse-title flex items-center gap-4 text-xl font-semibold"
-              >
-                <ion-icon
-                  name="hand-right-outline"
-                  class="rounded-full bg-violet-700 p-2 text-slate-100"
-                ></ion-icon>
-                <span class="block">Is there a way to support Artikulo?</span>
-              </div>
-              <div class="collapse-content">
-                <p class="ml-0 text-sm text-gray-600 md:ml-14">
-                  Absolutely! You can support us by subscribing to our
-                  newsletter, engaging with our content, and sharing your
-                  favorite articles on social media. Your support means the
-                  world to us and helps us continue creating valuable content
-                  for you.
-                </p>
-              </div>
-            </div>
-
-            <div class="collapse-plus collapse bg-violet-50">
-              <input type="radio" name="my-accordion-3" checked="checked" />
-              <div
-                class="collapse-title flex items-center gap-4 text-xl font-semibold"
-              >
-                <ion-icon
-                  name="share-social-outline"
-                  class="rounded-full bg-violet-700 p-2 text-slate-100"
-                ></ion-icon>
-                <span class="block"
-                  >Can I share your content on my website or social media?</span
-                >
-              </div>
-              <div class="collapse-content">
-                <p class="ml-0 text-sm text-gray-600 md:ml-14">
-                  Absolutely! We encourage sharing. Feel free to share our
-                  content on your website or social media platforms, and please
-                  remember to credit Artikulo with a link back to the original
-                  post.
-                </p>
-              </div>
+            <div class="collapse-content">
+              <p class="ml-0 text-sm text-gray-600 md:ml-16">
+                Artikulo is a lifestyle blog dedicated to exploring mindful
+                living, self-care, and personal development. We share practical
+                tips, inspirational stories, and expert advice to help you live
+                a balanced and fulfilling life.
+              </p>
             </div>
           </div>
-        </section>
 
-        <!-- Grid Container - Two Cols -->
-        <section>
-          <div class="grid gap-4 py-16 sm:grid-cols-1 sm:gap-8 md:grid-cols-2">
-            <div class="flex flex-col justify-between">
-              <header>
-                <h2 class="mb-4 font-raleway text-3xl font-bold">
-                  Send us a personal message
-                </h2>
-                <p class="text-gray-600 sm:mb-4">
-                  Have something to say? We are here to help. Fill up the form
-                  or send email or call phone. For latest updates, check our
-                  social media accounts.
-                </p>
-              </header>
-
-              <div class="flex gap-4">
-                <a href="#">
-                  <ion-icon
-                    name="logo-facebook"
-                    class="text-2xl text-violet-700 transition hover:scale-110"
-                  ></ion-icon>
-                </a>
-                <a href="#">
-                  <ion-icon
-                    name="logo-instagram"
-                    class="text-2xl text-violet-700 transition hover:scale-110"
-                  ></ion-icon>
-                </a>
-                <a href="#">
-                  <ion-icon
-                    name="logo-twitter"
-                    class="text-2xl text-violet-700 transition hover:scale-110"
-                  ></ion-icon>
-                </a>
-              </div>
+          <div class="collapse collapse-plus bg-violet-50">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="text-md collapse-title flex items-center gap-4 font-semibold sm:gap-6 sm:text-lg md:text-xl"
+            >
+              <ion-icon
+                name="pencil-outline"
+                class="shrink-0 rounded-full bg-violet-700 p-2 text-slate-100"
+              ></ion-icon>
+              <span class="block">How often do you post new content?</span>
             </div>
-            <form action="#" class="flex flex-col gap-4">
-              <input
-                type="text"
-                placeholder="Full name"
-                class="w-full rounded-lg border border-gray-200 px-4 py-2"
-              />
+            <div class="collapse-content">
+              <p class="ml-0 text-sm text-gray-600 md:ml-16">
+                We publish new content every Tuesday and Thursday. This includes
+                articles, interviews, and occasional bonus content to keep you
+                inspired throughout the week.
+              </p>
+            </div>
+          </div>
 
-              <input
-                type="email"
-                placeholder="Email"
-                class="w-full rounded-lg border border-gray-200 px-4 py-2"
-              />
-
-              <textarea
-                placeholder="Send us a message..."
-                class="w-full rounded-lg border border-gray-200 px-4 py-2"
-                rows="4"
-              ></textarea>
-
-              <button
-                type="submit"
-                class="w-full rounded-lg bg-violet-700 px-4 py-2 font-semibold text-slate-100 transition hover:bg-violet-600"
+          <div class="collapse collapse-plus bg-violet-50">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="text-md collapse-title flex items-center gap-4 font-semibold sm:gap-6 sm:text-lg md:text-xl"
+            >
+              <ion-icon
+                name="mail-unread-outline"
+                class="shrink-0 rounded-full bg-violet-700 p-2 text-slate-100"
+              ></ion-icon>
+              <span class="block"
+                >Can I submit a guest post or contribute to Artikulo?</span
               >
-                Send Message
-              </button>
-            </form>
+            </div>
+            <div class="collapse-content">
+              <p class="ml-0 text-sm text-gray-600 md:ml-16">
+                Currently, we are not accepting guest contributions. However, we
+                appreciate your interest and may open up to submissions in the
+                future. Stay tuned for updates!
+              </p>
+            </div>
           </div>
 
-          <div class="py-16">
-            <div id="map" class="h-60"></div>
+          <div class="collapse collapse-plus bg-violet-50">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="text-md collapse-title flex items-center gap-4 font-semibold sm:gap-6 sm:text-lg md:text-xl"
+            >
+              <ion-icon
+                name="hand-right-outline"
+                class="shrink-0 rounded-full bg-violet-700 p-2 text-slate-100"
+              ></ion-icon>
+              <span class="block">Is there a way to support Artikulo?</span>
+            </div>
+            <div class="collapse-content">
+              <p class="ml-0 text-sm text-gray-600 md:ml-16">
+                Absolutely! You can support us by subscribing to our newsletter,
+                engaging with our content, and sharing your favorite articles on
+                social media. Your support means the world to us and helps us
+                continue creating valuable content for you.
+              </p>
+            </div>
           </div>
-        </section>
-        <!-- /Grid Container - Two Cols -->
-      </div>
+
+          <div class="collapse collapse-plus bg-violet-50">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="text-md collapse-title flex items-center gap-4 font-semibold sm:gap-6 sm:text-lg md:text-xl"
+            >
+              <ion-icon
+                name="share-social-outline"
+                class="shrink-0 rounded-full bg-violet-700 p-2 text-slate-100"
+              ></ion-icon>
+              <span class="block"
+                >Can I share your content on my website or social media?</span
+              >
+            </div>
+            <div class="collapse-content">
+              <p class="ml-0 text-sm text-gray-600 md:ml-16">
+                Absolutely! We encourage sharing. Feel free to share our content
+                on your website or social media platforms, and please remember
+                to credit Artikulo with a link back to the original post.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-8 sm:py-16">
+        <div class="mb-12 grid gap-4 sm:grid-cols-1 sm:gap-8 md:grid-cols-2">
+          <div class="flex flex-col justify-between">
+            <header>
+              <h2
+                class="mb-4 font-raleway text-2xl font-bold sm:text-3xl md:text-4xl"
+              >
+                Send us a personal message
+              </h2>
+              <p class="mb-4 text-gray-600 md:mb-0">
+                Have something to say? We are here to help. Fill up the form or
+                send email or call phone. For latest updates, check our social
+                media accounts.
+              </p>
+            </header>
+
+            <div class="flex gap-4">
+              <a href="#">
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl text-violet-700 transition hover:scale-110"
+                ></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon
+                  name="logo-instagram"
+                  class="text-2xl text-violet-700 transition hover:scale-110"
+                ></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl text-violet-700 transition hover:scale-110"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <form action="#" class="flex flex-col gap-4">
+            <input
+              type="text"
+              placeholder="Full name"
+              class="w-full rounded-lg border border-gray-200 px-4 py-2"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full rounded-lg border border-gray-200 px-4 py-2"
+            />
+
+            <textarea
+              placeholder="Send us a message..."
+              class="w-full rounded-lg border border-gray-200 px-4 py-2"
+              rows="4"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-violet-700 px-4 py-2 font-semibold text-slate-100 transition hover:bg-violet-600"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div id="map" class="h-60"></div>
+      </section>
     </main>
     <footer>
-      <div class="mx-auto max-w-7xl px-2 py-8">
-        <div class="flex justify-between text-sm text-gray-600">
+      <div class="mx-auto max-w-7xl p-4">
+        <div
+          class="flex flex-col items-center gap-4 text-sm text-gray-600 sm:flex-row sm:justify-between"
+        >
           <p>All Rights Reserved <span class="year"></span>.</p>
           <p>
             Coded by
