@@ -9,3 +9,20 @@
   box-shadow: 0 0 0 0.2rem #c4b5fd;
   outline: none;
 }
+
+::selection {
+  background-color: #6d28d9;
+  color: #f1f5f9;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ddd6fe;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6d28d9;
+}
